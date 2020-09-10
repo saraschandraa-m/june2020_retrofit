@@ -26,4 +26,8 @@ public interface ApiInterface {
     @GET("v2/everything/")
     Call<Result> getNews(@QueryMap HashMap<String, Object> queries);
 
+
+    @GET("v2/top-headlines/")
+    Call<Result> getTopHeadlines(@QueryMap HashMap<String, Object> queries);
+
 }
